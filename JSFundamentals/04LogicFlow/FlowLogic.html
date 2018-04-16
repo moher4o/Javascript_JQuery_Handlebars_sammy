@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div id="myId"></div>
+    <script>
+        let result = "<ul>\n"
+        for (let i = 1; i <= 10; i++) {
+            let coLor = i%2 === 0 ? "blue" : "green"
+            result += `    <li><span style='color:${coLor}'>${i}</span></li>\n`
+        }
+        result += '</ul>\n'
+        document.getElementById('myId').innerHTML = result
+   </script>
+</head>
+<body>
+
+</body>
+</html>
